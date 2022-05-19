@@ -16,7 +16,9 @@
         <header class="header">
             <div class="container header-container">
                 <nav class="nav">
-                    <a class="link logo" href="/index.html"> Web<span class="logo-black">Studio</span></a>                
+                    <div class="logo-link">
+                        <a class="link logo" href="/index.html"> Web<span class="logo-black">Studio</span></a>
+                    </div>
                     <ul class="list header-pages">
                         <li class="item"> <a class="link active-page" href="./index.html">Студия</a> </li>
                         <li class="item"> <a class="link" href="./portfolio.html">Портфолио</a> </li>
@@ -24,8 +26,12 @@
                     </ul>
                 </nav>
                 <ul class="list header-contacts">
-                    <li class="item"> <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
-                    <li class="item"> <a class="link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
+                    <li class="item"> <a class="link" href="mailto:info@devstudio.com">
+                        <svg class="icon-contacts" width="16" height="12"><use href="./image/symbol-defs.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a></li>
+                    <li class="item"> <a class="link" href="tel:+380961111111">
+                        <svg class="icon-contacts" width="10" height="12"><use href="./image/symbol-defs.svg#icon-phone"></use></svg>
+                        +38 096 111 11 11</a> </li>
                 </ul>
             </div>
         </header>
@@ -113,7 +119,7 @@
                             <div class="team-content">
                                 <h3 class="team-member">Игорь Демьяненко</h3>
                                 <p class="team-job" lang="en">Product Designer</p>
-                                <ul class="list icon-set " width="44" height="44">
+                                <ul class="list icon-set">
                                     <li class="icon-item"><a class="link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow">
                                         <svg class="icon" width="20" height="20">
                                             <use href="./image/symbol-defs.svg#icon-instagram"></use>
@@ -232,10 +238,37 @@
             <section class="section">
                 <div class="container">
                     <h2 class="section-title">Постоянные клиенты</h2>
-                    <ul>
-                        <li>
-                            <a href=""></a>
-                        </li>
+                    <ul class="list card-set ">
+                        <li class=" item client-icon-item"><a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow" >
+                            <svg class="icon" width="106" height="60">
+                                <use href="./image/symbol-defs.svg#icon-company_1"></use>
+                            </svg>
+                        </a></li>
+                        <li class=" item client-icon-item"><a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow" >
+                            <svg class="icon" width="106" height="60">
+                                <use href="./image/symbol-defs.svg#icon-company_2"></use>
+                            </svg>
+                        </a></li> 
+                        <li class=" item client-icon-item"><a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow" >
+                            <svg class="icon" width="106" height="60">
+                                <use href="./image/symbol-defs.svg#icon-company_3"></use>
+                            </svg>
+                        </a></li> 
+                        <li class=" item client-icon-item"><a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow" >
+                            <svg class="icon" width="106" height="60">
+                                <use href="./image/symbol-defs.svg#icon-company_4"></use>
+                            </svg>
+                        </a></li> 
+                        <li class=" item client-icon-item"><a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow" >
+                            <svg class="icon" width="106" height="60">
+                                <use href="./image/symbol-defs.svg#icon-company_5"></use>
+                            </svg>
+                        </a></li> 
+                        <li class=" item client-icon-item"><a class="link" href="#" target="_blank" rel="noopener noreferrer nofollow" >
+                            <svg class="icon" width="106" height="60">
+                                <use href="./image/symbol-defs.svg#icon-company_6"></use>
+                            </svg>
+                        </a></li> 
                     </ul>
                 </div>                
             </section>
@@ -244,21 +277,21 @@
         <!-- Футер -->
         <footer class="footer">
             <div class="container">
-                <div class="footer-navigation">
-                    <div>
-                        <a class="link logo" href="/index.html">Web<span class="logo-white">Studio</span></a>
+                <div>
+                    <a class="link logo" href="/index.html">Web<span class="logo-white">Studio</span></a>
                     <address>
                         <ul class="list">
-                            <li class="item"> <a class="footer-contacts link" href="https://goo.gl/maps/w4182wPYShXfGa5f7" target="_blank"
-                                    rel="noopener noreferrer nofollow"> г. Киев, пр-т Леси Украинки, 26 </a></li>
-                            <li class="item"> <a class="footer-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="item"> <a class="footer-contacts link" href="https://goo.gl/maps/w4182wPYShXfGa5f7"
+                                    target="_blank" rel="noopener noreferrer nofollow"> г. Киев, пр-т Леси Украинки, 26 </a></li>
+                            <li class="item"> <a class="footer-contacts link"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                             <li class="item"> <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                         </ul>
                     </address>
-                    </div>
                 </div>
-                <div class="footer-navigation">
-                    <ul class="list icon-set " width="44" height="44">
+                <div class="footer-join">
+                    <p class="join">присоединяйтесь</p>
+                    <ul class="list icon-set" width="44" height="44">
                         <li class="icon-item"><a class="link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow">
                             <svg class="icon" width="20" height="20">
                                 <use href="./image/symbol-defs.svg#icon-instagram"></use>
@@ -281,10 +314,9 @@
                         </a></li>
                     </ul>
                 </div>
+
                 
-                
-                
-            </div>            
+            </div>
         </footer>
     </body>
 </html>
