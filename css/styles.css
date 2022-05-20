@@ -286,8 +286,6 @@ svg {
 .team-content .icon-item {    
     border-radius: 50%;    
     flex-basis: calc(100% / 4 - 10px);
-    padding-top: 12px;
-    padding-bottom: 12px;
 }
 .icon-set .link {
     display: flex;
