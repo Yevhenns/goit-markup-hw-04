@@ -91,6 +91,9 @@ img {
     margin-left: 10px;
     margin-top: 10px;
 }
+svg {
+    display: block;
+}
 
 
 
@@ -157,6 +160,7 @@ img {
 }
 .header-contacts .link {
     display: flex;
+    align-items: center;
 }
 .icon-contacts {
     margin-right: 10px;
@@ -227,6 +231,18 @@ img {
 .benefits-list .item {
     flex-basis: calc(100% / 4 - 30px);
 }
+.benefits-icon {
+    height: 120px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+.benefits-icon .icon {
+    margin-left: auto;;
+    margin-right: auto;   
+}
 /* 2 секция */
 
 
@@ -267,12 +283,55 @@ img {
     text-align: center;
     flex-basis: calc(100% / 4 - 30px);
 }
+.team-content .icon-item {    
+    border-radius: 50%;    
+    flex-basis: calc(100% / 4 - 10px);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.icon-set .link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-grey);
+}
+.icon-set .icon {    
+    margin-left: auto;
+    margin-right: auto;   
+    
+}
+.icon-set .link:hover,
+.icon-set .link:focus {
+    fill: var(--logo-white);
+    background-color: var(--secondary-text-color);
+}
 /* 4 секция */
 
 
 
 /* 5 секция */
-
+/* Клиенты */
+.client-icon-item .link {
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--icon-grey);
+    border-radius: 4px;
+    fill: currentColor;
+    
+}
+.card-set .client-icon-item {
+    flex-basis: calc(100% / 6 - 30px);
+}
+.client-icon-item .link:hover,
+.client-icon-item .link:focus {
+    border: 1px solid var(--secondary-text-color);
+    fill: var(--secondary-text-color);
+}
 /* 5 секция */
 
 
@@ -308,6 +367,46 @@ address {
     color: var(--secondary-text-color);
 }
 .footer-navigation {
+    display: flex;
+}
+.join  {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;    
+    text-transform: uppercase;
+    color: var(--logo-white);
+    margin-bottom: 20px;
+}
+.footer-join {
+    margin-left: 70px;
+    margin-top: 12px;
+}    
+.join-icon-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.join-icon-set .link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;    
+    background-color: var(--footer-join-icon);
+    fill: var(--logo-white);
+}
+.join-icon-set .link:hover,
+.join-icon-set .link:focus {
+    background-color: var(--secondary-text-color);
+}
+.join-icon-set .icon-item {
+    margin-left: 10px;
+    margin-top: 10px;
+    flex-basis: calc(100% / 4 - 10px);
+}
+.footer .container {
     display: flex;
 }
 /* Footer */
@@ -362,7 +461,8 @@ address {
     border: 1px solid var(--border-color);
     padding: 20px 24px;  
 }
-.service-list .item:hover {
+.service-list .item:hover,
+.service-list .item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -372,102 +472,3 @@ address {
 }
 /* Примеры услуг */
 /* ----------PORTFOLIO---------- */
-
-
-
-
-svg {
-    display: block;
-}
-
-
-.benefits-icon {
-    height: 120px;
-    background-color: var(--secondary-color);
-    border-radius: 4px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 30px;
-}
-.benefits-icon .icon {
-    margin-left: auto;;
-    margin-right: auto;   
-}
-.team-content .icon-item {    
-    border-radius: 50%;    
-    flex-basis: calc(100% / 4 - 10px);
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-.icon-set .link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    fill: currentColor;
-}
-.icon-set .icon {    
-    margin-left: auto;
-    margin-right: auto;   
-    
-}
-.icon-set .link:hover,
-.icon-set .link:focus {
-    fill: var(--logo-white);
-    background-color: var(--secondary-text-color);
-}
-
-
-
-
-
-
-/* Клиенты */
-.client-icon-item .link {
-    height: 92px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--icon-grey);
-    border-radius: 4px;
-    fill: currentColor;
-    
-}
-.card-set .client-icon-item {
-    flex-basis: calc(100% / 6 - 30px);
-}
-.client-icon-item .link:hover {
-    border: 1px solid var(--secondary-text-color);
-    fill: var(--secondary-text-color);
-}
-
-
-/* footer-icons */
-.join  {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;    
-    text-transform: uppercase;
-    color: var(--logo-white);
-    margin-bottom: 20px;
-}
-.footer-join {
-    margin-left: 70px;
-    margin-top: 12px;
-}    
-.footer-icon-set {
-    display: flex;    
-}
-.icon-set .link {
-    display: flex;
-    background-color: var(--footer-join-icon);
-    fill: var(--logo-white);
-}
-.footer-icon-set .icon-item {
-    margin-left: 10px;    
-}
-.footer .container {
-    display: flex;
-}
