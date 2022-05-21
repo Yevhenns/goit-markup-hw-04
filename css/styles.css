@@ -103,13 +103,13 @@ svg {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.2;
-    color: var(--secondary-text-color);    
+    color: var(--secondary-text-color);
 }
 .logo-black {
     color: var(--logo-black);
 }
 .header-pages .link {
-    color: var(--header-text-color);    
+    color: var(--header-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -205,7 +205,6 @@ svg {
 }
 .overlay {
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;    
     background-image: linear-gradient(to right, var(--hero-overlay),var(--hero-overlay)), url(../image/hero-photo.jpg);    
@@ -241,7 +240,7 @@ svg {
 }
 .benefits-icon .icon {
     margin-left: auto;;
-    margin-right: auto;   
+    margin-right: auto;
 }
 /* 2 секция */
 
@@ -275,16 +274,16 @@ svg {
     margin-bottom: 16px;
 }
 .team-list .item {
-    background: var(--logo-white);    
+    background: var(--logo-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;    
+    border-radius: 0px 0px 4px 4px;
     text-align: center;
     flex-basis: calc(100% / 4 - 30px);
 }
-.team-content .icon-item {    
-    border-radius: 50%;    
+.team-content .icon-item {
+    border-radius: 50%;
     flex-basis: calc(100% / 4 - 10px);
 }
 .icon-set .link {
@@ -294,12 +293,13 @@ svg {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+}
+.team-content .icon-set .link {
     fill: var(--icon-grey);
 }
-.icon-set .icon {    
+.icon-set .icon {
     margin-left: auto;
-    margin-right: auto;   
-    
+    margin-right: auto;
 }
 .icon-set .link:hover,
 .icon-set .link:focus {
@@ -319,7 +319,7 @@ svg {
     justify-content: center;
     border: 1px solid var(--icon-grey);
     border-radius: 4px;
-    fill: currentColor;
+    fill: var(--icon-grey);
     
 }
 .card-set .client-icon-item {
@@ -341,7 +341,7 @@ address {
 .footer {
     background-color: var(--hero-footer-color);
     padding-top: 60px;
-    padding-bottom: 60px;    
+    padding-bottom: 60px;
 }
 .footer .logo {
     display: block;
@@ -351,14 +351,14 @@ address {
     color: var(--logo-white);
 }
 .footer-contacts[target="_blank"] {
-    color: var(--logo-white);  
+    color: var(--logo-white);
 }
 .footer .item:not(:last-child) {
     margin-bottom: 9px;
 }
 .footer-contacts {
     color: var(--footer-contacts-color);
-    display: block;    
+    display: block;
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
@@ -370,42 +370,27 @@ address {
 .join  {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;    
+    line-height: 1.14;
     text-transform: uppercase;
     color: var(--logo-white);
     margin-bottom: 20px;
 }
-.footer-join {
-    margin-left: 70px;
-    margin-top: 12px;
+.footer-item:not(:last-child) {
+    margin-right: 70px;
 }    
-.join-icon-set {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-top: -10px;
+.footer-item:last-child {
+    width: 206px;
 }
-.join-icon-set .link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;    
+.footer-icon-set .link {
     background-color: var(--footer-join-icon);
     fill: var(--logo-white);
 }
-.join-icon-set .link:hover,
-.join-icon-set .link:focus {
-    background-color: var(--secondary-text-color);
-}
-.join-icon-set .icon-item {
-    margin-left: 10px;
-    margin-top: 10px;
+.footer-icon-set .icon-item {
     flex-basis: calc(100% / 4 - 10px);
 }
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
 /* Footer */
 /* ----------MAIN PAGE---------- */
@@ -434,7 +419,7 @@ address {
 .button-set {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
 }
 .button-set .item + .item {
     margin-left: 8px;
@@ -444,12 +429,12 @@ address {
 
 
 /* Примеры услуг */
-.service-title {    
+.service-title {
     color: var(--header-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-bottom: 4px;   
+    margin-bottom: 4px;
 }
 .service-description {
     font-size: 16px;
@@ -457,10 +442,13 @@ address {
 }
 .border-card {
     border: 1px solid var(--border-color);
-    padding: 20px 24px;  
+    padding: 20px 24px;
 }
-.service-list .item:hover,
-.service-list .item:focus {
+.service-link {
+    display: flex;
+}
+.service-link:hover,
+.service-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
